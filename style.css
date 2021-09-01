@@ -1,0 +1,53 @@
+body {
+    max-width: 600px;
+    margin: auto;
+}
+
+header, main, footer, section {
+    overflow: auto;
+    height: max-content;
+}
+
+header, footer {
+    background-color: #F2A7A0;
+    text-align: center;
+}
+
+main {
+    background-color: #F2F0CE;
+    padding: 10px 30px;
+}
+
+h1 {
+    font-size:x-large;
+}
+
+h2 {
+    font-size:larger;
+}
+
+p {
+    font-size:medium;
+}
+
+img {
+    max-width: 250px;
+    max-height: 200px;
+    margin: 10px;
+}
+
+#image1 {
+    float: right;
+}
+
+#image2 {
+    float: left;
+}
+
+li {
+    font-size:medium;
+    display: inline;
+    background-color: #F27979;
+    padding: 5px 10px;
+    margin: 0px 10px;
+}
