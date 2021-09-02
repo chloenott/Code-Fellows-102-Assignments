@@ -1,11 +1,21 @@
 <!DOCTYPE html>
+
+<!--
+image1b: https://en.wikipedia.org/wiki/File:Pasteques,_extrait_d%27un_tableau_de_Giovanni_Stanchi.jpeg#filelinks
+image1c: https://en.wikipedia.org/wiki/File:Citrullus_lanatus_var._citroides.JPG
+image1a: https://en.wikipedia.org/wiki/File:Watermelon_cross_BNC.jpg
+
+-->
 <html>
+
     <head>
         <title>The State Vegetable of Oklhaoma</title>
         <link rel="stylesheet" href="style.css" type="text/css">
+        
     </head>
-    <body>
 
+    <body>
+        
         <header>
             <h1>The State Vegetable of Oklahoma</h1>
             <nav>
@@ -18,10 +28,25 @@
         </header>
 
         <main>
+
+            <section id="js_section">
+                <script src="prompt_hello.js"></script>
+                <script src="prompt_showimage.js"></script>
+            </section>
+
             <section>
                 <h2>Section 1</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Piece_of_watermelon.png" alt="This is a sliced watermelon!!" id="image1">
-                <p>The state vegetable of okhlahoma is watermelon. It is also my favorite fruit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <section id="image1_group">
+                    <img src="image1a.png" alt="This is a sliced watermelon!!" id="image1">
+                    <section id="image1_thumbnail_group">
+                        <img id="thumbnail_1a" class="image1_thumbnails" src="image1a.png" alt="https://upload.wikimedia.org/wikipedia/commons/8/88/Piece_of_watermelon.png">
+                        <img id="thumbnail_1b" class="image1_thumbnails" src="image1b.jpeg" alt="https://en.wikipedia.org/wiki/File:Pasteques,_extrait_d%27un_tableau_de_Giovanni_Stanchi.jpeg#filelinks">
+                        <img id="thumbnail_1c" class="image1_thumbnails" src="image1c.jpeg" alt="https://en.wikipedia.org/wiki/File:Citrullus_lanatus_var._citroides.JPG">
+                    </section>
+                </section>
+                <p>
+                    The state vegetable of okhlahoma is watermelon. It is also my favorite fruit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </section>
             
             <section>
@@ -39,5 +64,8 @@
             </ul>
         </footer>
 
+        <script src="image_selector.js"></script>
+
     </body>
+
 </html>
