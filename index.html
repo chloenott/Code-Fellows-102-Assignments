@@ -11,7 +11,7 @@ image1a: https://en.wikipedia.org/wiki/File:Watermelon_cross_BNC.jpg
     <head>
         <title>The State Vegetable of Oklhaoma</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-        
+        <script src="combined.js"></script>
     </head>
 
     <body>
@@ -30,8 +30,10 @@ image1a: https://en.wikipedia.org/wiki/File:Watermelon_cross_BNC.jpg
         <main>
 
             <section id="js_section">
-                <script src="prompt_hello.js"></script>
-                <script src="prompt_showimage.js"></script>
+                <script>
+                    handleUserConfirmation(getUserConfirmation());     //Prompts user with okay window, handles resposne differently depending on true/false.
+                    handleUserAnswerForTinyImage(getUserAnswerForTinyImage())   //Asks for response, handles response differently if response is 'yes'.
+                </script>
             </section>
 
             <section>
@@ -63,8 +65,6 @@ image1a: https://en.wikipedia.org/wiki/File:Watermelon_cross_BNC.jpg
                 <li><a>Spotify</a></li>
             </ul>
         </footer>
-
-        <script src="image_selector.js"></script>
 
     </body>
 
