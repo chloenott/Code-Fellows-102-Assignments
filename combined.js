@@ -1,3 +1,21 @@
+
+//Prompts the user for how many times they want to see a copied image,
+//forces the user to answer between 0 and 100 (0 is a valid option),
+//then repeatedly writes that many <img> tags to the document,
+//to the location in the document the function is called from.
+function copyImagesOntoPage() {
+    let userCopyNumber = prompt("How many copied images do you want to see?");
+
+    while (userCopyNumber < 0 || userCopyNumber > 100000) {
+        userCopyNumber = prompt("The value has to be between 0 and 100000.")
+    }
+
+    for(let i = 0; i < Math.floor(userCopyNumber); i++) {
+        document.write('<img src="image1a.png" class="copied_image">')
+    }
+}
+
+
 //Prompts user with a confirmation window.
 //The user has to click okay, if they dont, then they
 //will keep get another confirmation window.
